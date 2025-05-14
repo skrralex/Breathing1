@@ -1,0 +1,56 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  overflow: hidden; /* ✅ Prevent scrolling */
+  touch-action: none; /* ✅ Disable pull-to-refresh and gestures */
+  color: white;
+  font-family: sans-serif;
+  position: relative;
+}
+
+.circle {
+  width: 30vmin;
+  height: 30vmin;
+  background-color: white;
+  border-radius: 50%;
+  transition: width 4s ease-in-out, height 4s ease-in-out;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: black;
+  font-size: 2vmin;
+  position: relative;
+}
+
+.text {
+  position: absolute;
+  text-align: center;
+  font-size: 3vmin;
+  font-weight: bold;
+}
+
+.counter {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  font-size: 2vmin;
+}
+
+#toggleButton {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  padding: 10px 20px;
+  font-size: 2vmin;
+  border: none;
+  border-radius: 10px;
+  background-color: white;
+  color: black;
+  cursor: pointer;
+}
