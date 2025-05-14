@@ -42,15 +42,3 @@ body {
   font-size: 2vmin;
 }
 
-#toggleButton {
-  position: absolute;
-  top: 20px;
-  right: 20px;
-  padding: 10px 20px;
-  font-size: 2vmin;
-  border: none;
-  border-radius: 10px;
-  background-color: white;
-  color: black;
-  cursor: pointer;
-}
