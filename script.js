@@ -72,8 +72,8 @@ function doBreathingCycle() {
   if (!breathing) return;
 
   guideText.textContent = 'Inhale';
-  circle.style.width = '60vmin';
-  circle.style.height = '60vmin';
+  circle.style.width = '80vmin';
+  circle.style.height = '80vmin';
   vibrate(200); // Long vibration at start of inhale
 
   timeoutChain.push(setTimeout(() => {
