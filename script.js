@@ -108,7 +108,7 @@ function doBreathingCycle() {
   }, inhaleTime));
 }
 
-toggleButton.addEventListener('click', () => {
+circle.addEventListener('click', () => {
   if (breathing) {
     stopBreathing();
   } else {
