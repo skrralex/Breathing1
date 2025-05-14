@@ -1,8 +1,6 @@
 const circle = document.querySelector('.circle');
 const guideText = document.getElementById('guideText');
 const counter = document.getElementById('cycleCounter');
-const toggleButton = document.getElementById('toggleButton');
-
 const inhaleTime = 4000;
 const holdTime = 2000;
 const exhaleTime = 4000;
@@ -32,7 +30,6 @@ function releaseWakeLock() {
 function startBreathing() {
   requestWakeLock();
   breathing = true;
-  toggleButton.textContent = 'Stop';
   cycleCount = 0;
   counter.textContent = `Cycle: 0`;
   guideText.textContent = 'Inhale';
@@ -41,7 +38,6 @@ function startBreathing() {
 
 function stopBreathing() {
   breathing = false;
-  toggleButton.textContent = 'Start';
   guideText.textContent = 'Ready?';
   circle.style.width = '30vmin';
   circle.style.height = '30vmin';
